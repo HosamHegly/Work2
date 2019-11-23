@@ -6,17 +6,17 @@
 int main( int argc , char **argv)
 {
 
-char func; 
+
 int account_number;
 double ammount;
 double rpeat;
-
+char func;
 
 printf("what opperation do you want to execute\n");
 
 while( 1)
 {
-func=getchar();
+scanf(" %[^\n]",&func);
 
 
 switch(func)
@@ -180,6 +180,8 @@ abort();
 
 break;
 }
+
+default : printf("invalid option\n");
 }
 
 printf("what opperation do you want to execute\n");
