@@ -175,14 +175,17 @@ break;
 }
 
 case 'E' :{
- close();
-abort();
+ closeaccounts();
+printf("program is closed bye bye");
 
 break;
 }
 
+
 default : printf("invalid option\n");
 }
+if(func=='E')
+break;
 
 printf("what opperation do you want to execute\n");
 }

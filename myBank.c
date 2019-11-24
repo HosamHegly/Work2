@@ -84,7 +84,7 @@ for(int i=0;i<50;i++)
 {
 if(arr[0][i]==1.0)
 {
-arr[1][i]=arr[1][i]*1.4;
+arr[1][i]+=arr[1][i]*(interest_rate/100);
 }
 }
 }
@@ -100,9 +100,10 @@ printf("account number: %d   ammount:%.2lf \n",i+g,arr[1][i]);
 }
 
 }
+}
 
 
-void close()
+void closeaccounts()
 {
 for(int i=0;i<50;i++)
 {
@@ -114,7 +115,7 @@ arr[1][i]=0;
 
 }
 
-}
+
 
 
 

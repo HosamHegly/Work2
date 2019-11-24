@@ -5,7 +5,7 @@ void pullmoney(double , int );
 void closeaccount(int );
 void addrepeat(double );
 void prinaccounts();
-void close();
+void closeaccounts();
 
 
 
