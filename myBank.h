@@ -1,4 +1,8 @@
+#define n 50
+extern double arr[2][n];
+
 void Addaccount(double );
+
 void accountsum(int );
 void entermoney(double , int );
 void pullmoney(double , int );

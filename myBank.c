@@ -1,8 +1,9 @@
-double arr[2][50];
+#define n 50
 #define g 900
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "myBank.h"
+double arr[2][n];
 
  void Addaccount(double ammount)
 {
@@ -82,9 +83,11 @@ void addrepeat(double interest_rate)
 {
 for(int i=0;i<50;i++)
 {
-if(arr[0][i]==1.0)
+if(arr[0][i]==1.0&&arr[1][i]>0)
 {
+
 arr[1][i]+=arr[1][i]*(interest_rate/100);
+
 }
 }
 }

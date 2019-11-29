@@ -12,11 +12,12 @@ double ammount;
 double rpeat;
 char func;
 
-printf("what opperation do you want to execute\n");
+
 
 while( 1)
 {
-scanf(" %[^\n]",&func);
+printf("what opperation do you want to execute\n");
+scanf(" %c",&func);
 
 
 switch(func)
@@ -34,6 +35,7 @@ while(getchar()!='\n'){}
 
 Addaccount(ammount);
 break;
+
 
 }
 
@@ -58,6 +60,7 @@ while(getchar()!='\n'){}
 
  accountsum(account_number);
 break;
+
 }
 
 case 'D' :{
@@ -92,6 +95,7 @@ while(getchar()!='\n'){}
 
  entermoney(ammount , account_number);
 break;
+
 }
 
 case 'W' :{
@@ -144,6 +148,7 @@ while(getchar()!='\n'){}
 }
  closeaccount(account_number );
 break;
+
 }
 
 case 'I' : {
@@ -187,7 +192,7 @@ default : printf("invalid option\n");
 if(func=='E')
 break;
 
-printf("what opperation do you want to execute\n");
+
 }
 }
 
