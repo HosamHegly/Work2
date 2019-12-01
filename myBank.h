@@ -1,3 +1,5 @@
+#ifndef _myBank_h_
+#define _myBank_h_
 #define n 50
 extern double arr[2][n];
 
@@ -12,4 +14,4 @@ void prinaccounts();
 void closeaccounts();
 
 
-
+#endif
